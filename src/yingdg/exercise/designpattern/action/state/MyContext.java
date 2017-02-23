@@ -3,6 +3,7 @@ package yingdg.exercise.designpattern.action.state;
 /**
  * Created by YingDG on 2017/2/22.
  */
+// 状态模式
 public class MyContext {
     private MyState state;
 
