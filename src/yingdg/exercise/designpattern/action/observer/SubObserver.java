@@ -3,6 +3,7 @@ package yingdg.exercise.designpattern.action.observer;
 /**
  * Created by YingDG on 2017/2/22.
  */
+// 观察者模式
 public class SubObserver extends AbsSubObserver {
 
     public static void main(String[] args) {

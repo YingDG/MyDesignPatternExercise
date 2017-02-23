@@ -3,6 +3,7 @@ package yingdg.exercise.designpattern.action.memento;
 /**
  * Created by YingDG on 2017/2/22.
  */
+// 备忘录模式
 public class Main {
     public static void main(String[] args) {
         Bean bean = new Bean("bean");
