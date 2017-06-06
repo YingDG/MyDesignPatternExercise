@@ -7,7 +7,6 @@ import com.sun.istack.internal.NotNull;
  */
 // 静态工厂
 public class Factory {
-    private static IFactory factory;
 
     public static IFactory getFactory(@NotNull String type) {
         if ("A".equals(type)) {

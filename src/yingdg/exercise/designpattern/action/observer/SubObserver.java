@@ -1,17 +1,28 @@
 package yingdg.exercise.designpattern.action.observer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by YingDG on 2017/2/22.
  */
-// 观察者模式
-public class SubObserver extends AbsSubObserver {
+public class SubObserver implements ISubObserver {
+    private List<IObserver> observerList = new ArrayList<>();
 
-    public static void main(String[] args) {
-        ISubObserver subObserver = new SubObserver();
-        subObserver.add(new ObserverA());
-        subObserver.add(new ObserverB());
-        subObserver.remove(subObserver.getObserverList().get(0));
+    @Override
+    public void add(IObserver observer) {
+        observer.go();
+        observerList.add(observer);
+    }
 
-        System.out.println(subObserver.getObserverList().size() + subObserver.getObserverList().toString());
+    @Override
+    public void remove(IObserver observer) {
+        observer.go();
+        observerList.remove(observer);
+    }
+
+    @Override
+    public List<IObserver> getObserverList() {
+        return observerList;
     }
 }
