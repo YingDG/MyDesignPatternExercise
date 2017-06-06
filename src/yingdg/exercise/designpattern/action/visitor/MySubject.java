@@ -1,12 +1,12 @@
 package yingdg.exercise.designpattern.action.visitor;
 
-import yingdg.exercise.designpattern.action.observer.ISubObserver;
-
 /**
  * Created by YingDG on 2017/2/23.
  */
 // 访问者模式
 public class MySubject implements ISubject {
+
+    // 关键点
     @Override
     public void receive(IVisitor visitor) {
         visitor.go(this);
@@ -18,9 +18,7 @@ public class MySubject implements ISubject {
     }
 
     public static void main(String[] args) {
-        IVisitor visitor = new MyVisit();
         ISubject subject = new MySubject();
-
-        subject.receive(visitor);
+        subject.receive(new MyVisit());
     }
 }

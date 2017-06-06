@@ -33,7 +33,9 @@ public class MyContext {
     }
 
     public static void main(String[] args) {
+        // 实现类
         MyState state = new MyState();
+        // 上下文类
         MyContext context = new MyContext(state);
 
         state.setName("A");

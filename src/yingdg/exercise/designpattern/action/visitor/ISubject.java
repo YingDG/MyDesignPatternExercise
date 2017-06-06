@@ -3,6 +3,7 @@ package yingdg.exercise.designpattern.action.visitor;
 /**
  * Created by YingDG on 2017/2/23.
  */
+// 主要业务描述
 public interface ISubject {
     void receive(IVisitor visitor);
 
