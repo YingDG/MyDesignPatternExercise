@@ -6,7 +6,7 @@ package yingdg.exercise.designpattern.structure.bridge;
 public class AbstractBridge {
     private IBridge bridge;
 
-    public void go() {
+    public void def() {
         bridge.go();
     }
 

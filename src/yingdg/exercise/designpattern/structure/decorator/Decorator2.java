@@ -11,6 +11,9 @@ public class Decorator2 implements IDecorator {
         this.decorator = decorator;
     }
 
+    /*
+    开闭原则的实践，在原有实现的基础上增加了同一接口的不同实现。
+     */
     @Override
     public void go() {
         decorator.go();
