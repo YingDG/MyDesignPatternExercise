@@ -4,7 +4,7 @@ package yingdg.exercise.designpattern.action.visitor;
  * Created by YingDG on 2017/2/23.
  */
 // 访问者模式
-public class MySubject implements ISubject {
+public class MyHandler implements IHandler {
 
     // 关键点
     @Override
@@ -18,7 +18,7 @@ public class MySubject implements ISubject {
     }
 
     public static void main(String[] args) {
-        ISubject subject = new MySubject();
-        subject.receive(new MyVisit());
+        IHandler handler = new MyHandler();
+        handler.receive(new MyVisit());
     }
 }

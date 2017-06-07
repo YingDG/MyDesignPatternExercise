@@ -3,6 +3,7 @@ package yingdg.exercise.designpattern.action.mediator;
 /**
  * Created by YingDG on 2017/2/23.
  */
+// 中介类
 public abstract class AbsA {
     private IMediator mediator;
 

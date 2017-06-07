@@ -7,7 +7,7 @@ package yingdg.exercise.designpattern.structure.bridge;
 public class Bridge extends AbstractBridge {
 
     @Override
-    public void go() {
+    public void def() {
         super.getBridge().go();
     }
 
@@ -15,9 +15,9 @@ public class Bridge extends AbstractBridge {
         Bridge bridge = new Bridge();
 
         bridge.setBridge(new BridgeA());
-        bridge.go();
+        bridge.def();
 
         bridge.setBridge(new BridgeB());
-        bridge.go();
+        bridge.def();
     }
 }

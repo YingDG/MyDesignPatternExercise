@@ -15,8 +15,4 @@ public abstract class AbstractRunner implements IAdapter {
 
     }
 
-    public static void main(String[] args) {
-        IAdapter adapter = new Runner3();
-        adapter.go2();
-    }
 }

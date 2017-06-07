@@ -3,6 +3,7 @@ package yingdg.exercise.designpattern.action.chainofresposibility;
 /**
  * Created by YingDG on 2017/2/22.
  */
+// 核心类
 public abstract class AbsResposibility {
     private IResposibility resposibility;
 

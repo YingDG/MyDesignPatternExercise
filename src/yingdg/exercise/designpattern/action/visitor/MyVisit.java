@@ -5,7 +5,7 @@ package yingdg.exercise.designpattern.action.visitor;
  */
 public class MyVisit implements IVisitor {
     @Override
-    public void go(ISubject subject) {
+    public void go(IHandler subject) {
         System.out.println(subject.get());
     }
 }
