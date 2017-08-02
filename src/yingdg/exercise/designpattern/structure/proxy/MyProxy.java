@@ -4,10 +4,10 @@ package yingdg.exercise.designpattern.structure.proxy;
  * Created by YingDG on 2017/2/17.
  */
 // 静态代理
-public class Proxy {
+public class MyProxy {
     private HouseOwner owner;
 
-    public Proxy() {
+    public MyProxy() {
         this.owner = new HouseOwner();
     }
 
@@ -25,7 +25,7 @@ public class Proxy {
     }
 
     public static void main(String[] args) {
-        Proxy proxy = new Proxy();
+        MyProxy proxy = new MyProxy();
         proxy.sellHouse(true);
         proxy.sellHouse(false);
     }
