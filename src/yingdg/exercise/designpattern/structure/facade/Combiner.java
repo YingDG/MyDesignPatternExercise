@@ -13,6 +13,9 @@ public class Combiner implements IFacade {
         this.b = new ClassB();
     }
 
+    /*
+    项目模块业务层开发常用的套路。
+     */
     @Override
     public void start() {
         a.start();

@@ -3,21 +3,18 @@ package yingdg.exercise.designpattern.structure.bridge;
 /**
  * Created by YingDG on 2017/2/17.
  */
-// 桥接模式
-public class Bridge extends AbstractBridge {
+public class Bridge {
+    private IBridge bridge;
 
-    @Override
     public void def() {
-        super.getBridge().go();
+        bridge.go();
     }
 
-    public static void main(String[] args) {
-        Bridge bridge = new Bridge();
+    public IBridge getBridge() {
+        return bridge;
+    }
 
-        bridge.setBridge(new BridgeA());
-        bridge.def();
-
-        bridge.setBridge(new BridgeB());
-        bridge.def();
+    public void setBridge(IBridge bridge) {
+        this.bridge = bridge;
     }
 }
