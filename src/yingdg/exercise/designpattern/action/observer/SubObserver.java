@@ -7,7 +7,11 @@ import java.util.List;
  * Created by YingDG on 2017/2/22.
  */
 public class SubObserver implements ISubObserver {
-    private List<IObserver> observerList = new ArrayList<>();
+    private List<IObserver> observerList;
+
+    public SubObserver() {
+        this.observerList = new ArrayList<>();
+    }
 
     @Override
     public void add(IObserver observer) {
@@ -25,4 +29,5 @@ public class SubObserver implements ISubObserver {
     public List<IObserver> getObserverList() {
         return observerList;
     }
+
 }

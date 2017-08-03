@@ -19,6 +19,9 @@ public class Bean {
         this.name = name;
     }
 
+    /*
+    源类包括对备份类的操作
+     */
     public Backup createBackup() {
         return new Backup(name);
     }
