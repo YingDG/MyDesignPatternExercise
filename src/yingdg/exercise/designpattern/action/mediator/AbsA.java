@@ -7,6 +7,9 @@ package yingdg.exercise.designpattern.action.mediator;
 public abstract class AbsA {
     private IMediator mediator;
 
+    /*
+    实现类与中介类绑定
+     */
     public AbsA(IMediator mediator) {
         this.mediator = mediator;
     }

@@ -13,6 +13,8 @@ public class Decorator2 implements IDecorator {
 
     /*
     开闭原则的实践，在原有实现的基础上增加了同一接口的不同实现。
+
+    常用的场景是工具包的相关方法根据业务场景做二次封装。
      */
     @Override
     public void go() {

@@ -16,6 +16,9 @@ public class Mediator implements IMediator {
         return a2;
     }
 
+    /*
+    核心：通过这个方法与中介类绑定起来，防止相关实现类单独被实例化调用
+     */
     @Override
     public void create() {
         a1 = new A1(this);
@@ -29,7 +32,7 @@ public class Mediator implements IMediator {
     }
 
     public static void main(String[] args) {
-        IMediator mediator=new Mediator();
+        IMediator mediator = new Mediator();
         mediator.create();
         mediator.go();
     }

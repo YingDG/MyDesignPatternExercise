@@ -15,7 +15,8 @@ public class Resposibility extends AbsResposibility implements IResposibility {
     @Override
     public void go() {
         System.out.println(test);
-        IResposibility resposibility = getResposibility();
+
+        IResposibility resposibility = super.getResposibility();
         if (resposibility != null) {
             resposibility.go();
         }
