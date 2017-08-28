@@ -13,7 +13,10 @@ public class Main {
      */
     public static void main(String[] args) {
         Director director = new Director();
-        Product product = director.getProductInstance(new ProductBuilder());
+
+        IBuilder builder = new ProductBuilder();
+        Product product = director.getProductInstance(builder);
+
         System.out.println(product);
     }
 }

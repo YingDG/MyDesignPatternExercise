@@ -5,6 +5,10 @@ package yingdg.exercise.designpattern.action.chainofresposibility;
  */
 // 责任链模式
 public class Resposibility extends AbsResposibility implements IResposibility {
+    /*
+    AbsResposibility本身具有IResposibility接口的引用，其继承类又实现了该接口
+     */
+
     private String test;
 
     public Resposibility(String test) {
@@ -14,8 +18,10 @@ public class Resposibility extends AbsResposibility implements IResposibility {
     // 核心方法，类似于递归调用
     @Override
     public void go() {
+        // 先执行自身方法
         System.out.println(test);
 
+        // 再执行下一链节的方法
         IResposibility resposibility = super.getResposibility();
         if (resposibility != null) {
             resposibility.go();

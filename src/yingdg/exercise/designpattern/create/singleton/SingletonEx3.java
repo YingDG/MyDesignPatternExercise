@@ -17,16 +17,19 @@ public class SingletonEx3 {
 
     }
 
-    public static Object getInstance(Class<?> clz) {
+    public synchronized static Object getInstance(Class<?> clz) {
         try {
-            if (Objects.isNull(map.get(clz))) {
-                Object o = clz.newInstance();
-                map.put(clz, o);
+            synchronized (SingletonEx3.class) {
+                if (Objects.isNull(map.get(clz))) {
+                    Object o = clz.newInstance();
+                    map.put(clz, o);
+                }
             }
         } catch (InstantiationException | IllegalAccessException e) {
             e.printStackTrace();
             return null;
         }
+
         return map.get(clz);
     }
 
