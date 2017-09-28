@@ -3,7 +3,7 @@ package yingdg.exercise.designpattern.structure.bridge;
 /**
  * Created by YingDG on 2017/2/17.
  */
-public class Bridge {
+public abstract class Bridge {
     private IBridge bridge;
 
     public void def() {

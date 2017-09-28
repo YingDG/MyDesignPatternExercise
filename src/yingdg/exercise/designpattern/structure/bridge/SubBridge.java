@@ -12,6 +12,7 @@ public class SubBridge extends Bridge {
     @Override
     public void def() {
         super.getBridge().go();
+        System.out.println("子类实现");
     }
 
     public static void main(String[] args) {
