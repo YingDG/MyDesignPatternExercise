@@ -6,6 +6,6 @@ package yingdg.exercise.designpattern.action.observer;
 public class ObserverB implements IObserver {
     @Override
     public void go() {
-        System.out.println("B.go");
+        System.out.println("B.visit");
     }
 }

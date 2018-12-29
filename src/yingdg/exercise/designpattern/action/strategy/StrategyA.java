@@ -7,6 +7,6 @@ public class StrategyA extends Strategy implements IStrategy {
     @Override
     public void go() {
         absGo();
-        System.out.println("A.go");
+        System.out.println("A.visit");
     }
 }

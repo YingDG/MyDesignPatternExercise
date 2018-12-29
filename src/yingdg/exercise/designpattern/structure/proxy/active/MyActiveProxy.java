@@ -32,7 +32,7 @@ public class MyActiveProxy implements InvocationHandler {
         会判断引用类所有的方法
          */
         String methodName = method.getName();
-        if ("go".equals(methodName)) {
+        if ("visit".equals(methodName)) {
             System.out.println("fuck off");
              /*
             这一部分可以替换为其他实现类

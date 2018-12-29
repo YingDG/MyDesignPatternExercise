@@ -9,16 +9,15 @@ public class MyHandler implements IHandler {
     // 关键点
     @Override
     public void receive(IVisitor visitor) {
-        visitor.go(this);
+        visitor.visit(this);
     }
 
+    /*
+    具体的数据提供
+     */
     @Override
     public String get() {
         return "gogogo!";
     }
 
-    public static void main(String[] args) {
-        IHandler handler = new MyHandler();
-        handler.receive(new MyVisit());
-    }
 }

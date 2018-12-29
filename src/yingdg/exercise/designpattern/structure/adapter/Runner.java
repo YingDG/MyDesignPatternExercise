@@ -7,6 +7,7 @@ package yingdg.exercise.designpattern.structure.adapter;
 public class Runner extends Original implements IAdapter {
     @Override
     public void go2() {
+        super.go();
         System.out.println("Go2");
     }
 

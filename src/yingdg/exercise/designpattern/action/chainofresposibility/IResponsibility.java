@@ -3,6 +3,6 @@ package yingdg.exercise.designpattern.action.chainofresposibility;
 /**
  * Created by YingDG on 2017/2/22.
  */
-public interface IResposibility {
+public interface IResponsibility {
     void go();
 }
